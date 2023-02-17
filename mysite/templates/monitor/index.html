@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+  <link rel="stylesheet" href="{% static 'css/fonts.css' %}">
+<head>
+</head>
+{% block content %}
+<body class="index">
+<div class="container">
+  <h2 style="font-family: 'Jua', sans-serif;">Log Monitoring System</h2>
+  <br>
+  <ul class="index" role="list" style="font-family: 'Nanum Gothic', sans-serif;">
+    <li data-icon="1️⃣"> 메인 서버의 파일 및 디렉터리 백업</li><br>
+    <li data-icon="2️⃣"> 메인 서버의 로그 백업</li><br>
+    <li data-icon="3️⃣"> 로그 모니터링 서비스</li><br>
+  </ul>
+
+</div>
+{%endblock%}
+</body>
+</html>

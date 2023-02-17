@@ -1,0 +1,15 @@
+.index ul li::before {
+    content: attr(data-icon);
+}
+
+.index ul {
+    padding-inline-start: 0px;
+}
+
+.index li {
+    list-style: none;
+}
+
+h2 {
+    font-family: 'Jua', sans-serif;
+}

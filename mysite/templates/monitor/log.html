@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+{% block content %}
+<div class="container">
+  <h2>로그 관리</h2>
+  <div class="table-responsive">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>번호</th>
+        <th>ReceivedAt</th>
+        <th>FromHost</th>
+        <th>Message</th>
+        <th>수정</th>
+        <th>삭제</th>
+      </tr>
+    </thead>
+    <tbody>
+{% for data in rsyslogs %}
+      <tr>
+        <td><a href="{% url 'monitor:detail' data.id %}">{{ data.id }}</a></td> <!-- detail의 data.id(ID)만 읽어라 -->
+        <td>{{ data.ReceivedAt }}</td>
+        <td>{{ data.FromHost }}</td>
+        <td>{{ data.Message }}</td>
+        <td><a href="{% url 'monitor:detail' data.id %}">{{ data.id }}</a></td>
+        <td><a href="{% url 'monitor:detail' data.id %}">{{ data.id }}</a></td>
+      </tr>
+{% endfor %}
+    </tbody>
+  </table>
+  </div>
+</div>
+{%endblock%}
+</body>
+</html>

@@ -1,0 +1,151 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{%block content%}
+<div class="container">
+    <h2>로그 관리 상세보기</h2>
+    <p>#Rsyslog, #모니터링</p>
+    <div class="table-responsive">
+    <table class="table">
+    <thead>
+        <tr>
+            <th>No.</th>
+            <th>Attribute</th>
+            <th>값</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>id</td>
+            <td>{{ rsyslogs.id }}</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>CustomerID</td>
+            <td>{{ rsyslogs.CustomerID }}</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>ReceivedAt</td>
+            <td>{{ rsyslogs.ReceivedAt }}</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>DeviceReportedTime</td>
+            <td>{{ rsyslogs.DeviceReportedTime }}</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Facility</td>
+            <td>{{ rsyslogs.Facility }}</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Priority</td>
+            <td>{{ rsyslogs.Priority }}</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>FromHost</td>
+            <td>{{ rsyslogs.FromHost }}</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Message</td>
+            <td>{{ rsyslogs.Message }}</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>NTSeverity</td>
+            <td>{{ rsyslogs.NTSeverity }}</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Importance</td>
+            <td>{{ rsyslogs.Importance }}</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>EventSource</td>
+            <td>{{ rsyslogs.EventSource }}</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>EventUser</td>
+            <td>{{ rsyslogs.EventUser }}</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>EventCategory</td>
+            <td>{{ rsyslogs.EventCategory }}</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>EventID</td>
+            <td>{{ rsyslogs.EventID }}</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>EventBinaryData</td>
+            <td>{{ rsyslogs.EventBinaryData }}</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>MaxAvailable</td>
+            <td>{{ rsyslogs.MaxAvailable }}</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>CurrUsage</td>
+            <td>{{ rsyslogs.CurrUsage }}</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td>MinUsage</td>
+            <td>{{ rsyslogs.MinUsage }}</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td>MaxUsage</td>
+            <td>{{ rsyslogs.MaxUsage }}</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>InfoUnitID</td>
+            <td>{{ rsyslogs.InfoUnitID }}</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>SysLogTag</td>
+            <td>{{ rsyslogs.SysLogTag }}</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>EventLogType</td>
+            <td>{{ rsyslogs.EventLogType }}</td>
+        </tr>
+        <tr>
+            <td>23</td>
+            <td>GenericFileName</td>
+            <td>{{ rsyslogs.GenericFileName }}</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>SystemID</td>
+            <td>{{ rsyslogs.SystemID }}</td>
+        </tr>
+
+
+    </tbody>
+</table>
+{%endblock%}
+  </div>
+</div>
+</body>
+</html>

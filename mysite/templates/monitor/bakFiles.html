@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+
+
+  </style>
+
+</head>
+<body>
+{% load static %}
+{% block content %}
+<div class="container">
+  <h2>백업한 파일 목록</h2>
+  <br>
+
+{% for file in file_list %}
+  <ul>
+    <li>{{ file }}</li>
+  </ul>
+{% endfor %}
+</div>
+{% endblock %}
+
+
+
+</body>
+</html>
