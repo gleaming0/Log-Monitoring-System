@@ -17,3 +17,10 @@
 <p align="center"><img src="https://user-images.githubusercontent.com/76648555/219581539-5a6d1e9b-962b-4034-8f04-739ab3135b13.gif"></p>
 
 + 고화질 시연영상 : https://youtu.be/1IxP6B10dFk
+
+
+#### +) history 추가
+
++ 메인 서버에서 최근 실행한 명령어 50개 목록 확인
+
+<p align="center"><img src="https://user-images.githubusercontent.com/76648555/223048418-17126c13-e9b2-452c-8b1f-cc59de43ce9f.gif"></p>
