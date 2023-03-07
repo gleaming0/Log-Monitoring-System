@@ -11,7 +11,7 @@
   <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">  <!-- static css -->
+  <link href="https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
 </head>
@@ -27,13 +27,15 @@
       <li><a href="{% url 'monitor:bakFiles'%}">Backup List</a></li>
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Logs<span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="{% url 'monitor:auth'%}">auth</a></li>
+          <!--<li><a href="{% url 'monitor:auth'%}">auth</a></li>-->
           <li><a href="{% url 'monitor:postfix'%}">postfix</a></li>
           <li><a href="{% url 'monitor:rsyslogd'%}">rsyslogd</a></li>
+          <li><a href="{% url 'monitor:sshd'%}">sshd</a></li>
           <li><a href="{% url 'monitor:systemd'%}">systemd</a></li>
      	  <li><a href="{% url 'monitor:vsftpd'%}">vsftpd</a></li>
       </ul>
       </li>
+      <li><a href="{% url 'monitor:history'%}">History</a></li>
       <!-- <li><a href="{% url 'monitor:log'%}">예전꺼</a></li> -->
     </ul>
     <ul class="nav navbar-nav navbar-right">

@@ -1,2 +1,2 @@
 #!/bin/sh
-python3 insert.py
+python3 new_insert2.py

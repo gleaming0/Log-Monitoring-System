@@ -38,16 +38,6 @@ class SystemEventsProperties(models.Model):
         db_table ='SystemEventsProperties'
 
 # PROJECT
-class ssh(models.Model):
-    Date = models.CharField(max_length=50, null=True)
-    Host = models.CharField(max_length=50, null=True)
-    Daemon = models.CharField(max_length=50, null=True)
-    Message = models.CharField(max_length=1000, null=True)
-
-    class Meta:
-        db_table ='ssh'
-
-
 class Myauth(models.Model):
     date = models.CharField(max_length=100, null=True)
     host = models.CharField(max_length=100, null=True)
@@ -93,7 +83,6 @@ class Vsftpd(models.Model):
     process = models.CharField(max_length=100, null=True)
     message = models.CharField(max_length=1000, null=True)
 
-
     class Meta:
         db_table ='Vsftpd'
 
@@ -103,6 +92,17 @@ class Tripwire(models.Model):
     process = models.CharField(max_length=100, null=True)
     message = models.CharField(max_length=1000, null=True)
 
-
     class Meta:
         db_table ='Tripwire'
+
+
+class Sshd(models.Model):
+    date = models.CharField(max_length=50, null=True)
+    host = models.CharField(max_length=50, null=True)
+    pid = models.CharField(max_length=50, null=True)
+    message = models.CharField(max_length=1000, null=True)
+
+    class Meta:
+        db_table ='Sshd'
+
+

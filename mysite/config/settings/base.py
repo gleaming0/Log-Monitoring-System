@@ -16,17 +16,16 @@ import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '[SECREY_KEY]'
+SECRET_KEY = '[SECRET_KEY]'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['jeonjucom.kr']
 
 
 # Application definition
@@ -88,8 +87,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'rsyslog',
-        'USER':[CHANGE USER],
-        'PASSWORD':[CHANGE PASSWORD],
+        'USER':'root',
+        'PASSWORD':'123456',
         'HOST':'127.0.0.1',
         'PORT':'3306',
     }
@@ -133,6 +132,9 @@ STATIC_URL = "/static/"
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 LOGIN_REDIRECT_URL = "/monitor"
 LOGOUT_REDIRECT_URL = "/monitor"

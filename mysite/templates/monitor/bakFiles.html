@@ -12,12 +12,12 @@
 {% load static %}
 {% block content %}
 <div class="container">
-  <h2>백업한 파일 목록</h2>
+  <h2 style="font-family: 'Jua', sans-serif;">백업한 파일 목록</h2>
   <br>
 
 {% for file in file_list %}
   <ul>
-    <li>{{ file }}</li>
+    <li><a href="{% url 'monitor:file_download' %}?path={{ file }} ">{{ file }}</a></li>
   </ul>
 {% endfor %}
 </div>
